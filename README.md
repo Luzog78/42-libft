@@ -10,7 +10,7 @@ Version: `alpha1.0`
 
 Useful command :
 	```sh
-	make re && make clean && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
+	make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 	```
 
 <br>
