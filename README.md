@@ -26,27 +26,27 @@ Useful command :
 - [ ] memmove
 - [ ] memchr
 - [ ] memcmp
-- [ ] strlen
-- [ ] strdup
-- [ ] strcpy
-- [ ] strncpy
-- [ ] strcat
-- [ ] strncat
-- [ ] strlcat
+- [X] strlen
+- [X] strdup
+- [X] strcpy
+- [X] strncpy
+- [X] strcat
+- [X] strncat
+- [X] strlcat
 - [ ] strchr
 - [ ] strrchr
-- [ ] strstr
+- [X] strstr
 - [ ] strnstr
-- [ ] strcmp
-- [ ] strncmp
-- [ ] atoi
-- [ ] isalpha
-- [ ] isdigit
-- [ ] isalnum
-- [ ] isascii
-- [ ] isprint
-- [ ] toupper
-- [ ] tolower
+- [X] strcmp
+- [X] strncmp
+- [X] atoi
+- [X] isalpha
+- [X] isdigit
+- [X] isalnum
+- [X] isascii
+- [X] isprint
+- [X] toupper
+- [X] tolower
 
 ---
 
@@ -61,12 +61,12 @@ Useful command :
 - [ ] ft_striteri
 - [ ] ft_strmap
 - [ ] ft_strmapi
-- [ ] ft_strequ
-- [ ] ft_strnequ
+- [X] ft_strequ
+- [X] ft_strnequ
 - [ ] ft_strsub
 - [ ] ft_strjoin
 - [ ] ft_strtrim
-- [ ] ft_strsplit
+- [X] ft_strsplit *(not safe malloc)*
 - [ ] ft_itoa
 - [X] ft_putchar
 - [X] ft_putstr
@@ -74,8 +74,8 @@ Useful command :
 - [X] ft_putnbr
 - [X] ft_putchar_fd
 - [X] ft_putstr_fd
-- [ ] ft_putendl_fd
-- [ ] ft_putnbr_fd
+- [X] ft_putendl_fd
+- [X] ft_putnbr_fd
 
 <br>
 
