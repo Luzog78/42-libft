@@ -65,7 +65,7 @@ Useful command :
 - [X] ft_strnequ
 - [ ] ft_strsub
 - [X] ft_strjoin
-- [ ] ft_strtrim
+- [X] ft_strtrim
 - [X] ft_strsplit *(not safe malloc)*
 - [ ] ft_itoa
 - [X] ft_putchar
