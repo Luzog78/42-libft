@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
+/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 08:57:36 by ysabik            #+#    #+#             */
-/*   Updated: 2023/07/17 06:23:45 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/09/28 13:25:03 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putstr(char *str)
+void	ft_putstr(char const *str)
 {
 	while (*str)
 		write(1, str++, 1);
