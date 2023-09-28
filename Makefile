@@ -4,6 +4,7 @@ NAME		= libft.a
 HEADER		= libft.h
 SRC_FILES	= ft_putchar.c \
 				ft_putstr.c \
+				ft_putendl.c \
 				ft_putnbr.c
 OBJ_FILES	= $(SRC_FILES:.c=.o)
 

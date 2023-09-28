@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putendl.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 13:28:24 by luzog            ###   ########.fr       */
+/*   Created: 2023/09/28 13:28:42 by luzog             #+#    #+#             */
+/*   Updated: 2023/09/28 13:29:16 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
 
-void	ft_putchar(char c);
-void	ft_putstr(char const *str);
-void	ft_putendl(char const *s);
-void	ft_putnbr(int n);
-
-#endif
+void	ft_putendl(char const *str)
+{
+	while (*str)
+		write(1, str++, 1);
+	write(1, "\n", 1);
+}
