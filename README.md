@@ -63,7 +63,7 @@ Version: `alpha1.0`
 - [ ] ft_strtrim
 - [ ] ft_strsplit
 - [ ] ft_itoa
-- [ ] ft_putchar
+- [X] ft_putchar
 - [ ] ft_putstr
 - [ ] ft_putendl
 - [ ] ft_putnbr
