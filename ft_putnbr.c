@@ -1,20 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 13:19:29 by luzog            ###   ########.fr       */
+/*   Created: 2023/07/12 06:26:20 by ysabik            #+#    #+#             */
+/*   Updated: 2023/09/28 04:09:06 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#include <unistd.h>
 
-void	ft_putchar(char c);
-void	ft_putstr(char *str);
-void	ft_putnbr(int n);
+void	ft_putnbr(int n)
+{
+	char	c;
 
-#endif
+	if (n == -2147483648)
+		write(1, "-2147483648", 11);
+	else if (n < 0)
+	{
+		write(1, "-", 1);
+		n = -n;
+	}
+	if (n < 10)
+	{
+		c = n + '0';
+		write(1, &c, 1);
+	}
+	else
+	{
+		ft_putnbr(n / 10);
+		c = (n % 10) + '0';
+		write(1, &c, 1);
+	}
+}

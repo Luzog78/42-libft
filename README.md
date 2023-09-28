@@ -8,6 +8,11 @@ __Author__ : `ysabik`
 
 Version: `alpha1.0`
 
+Useful command :
+	```sh
+	make re && make clean && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
+	```
+
 <br>
 
 ## Functions
@@ -66,7 +71,7 @@ Version: `alpha1.0`
 - [X] ft_putchar
 - [X] ft_putstr
 - [ ] ft_putendl
-- [ ] ft_putnbr
+- [X] ft_putnbr
 - [ ] ft_putchar_fd
 - [ ] ft_putstr_fd
 - [ ] ft_putendl_fd
