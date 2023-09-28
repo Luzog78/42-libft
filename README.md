@@ -70,7 +70,7 @@ Useful command :
 - [ ] ft_itoa
 - [X] ft_putchar
 - [X] ft_putstr
-- [ ] ft_putendl
+- [X] ft_putendl
 - [X] ft_putnbr
 - [ ] ft_putchar_fd
 - [ ] ft_putstr_fd
