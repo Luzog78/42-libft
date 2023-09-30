@@ -57,10 +57,10 @@ Useful command :
 - [ ] ft_strnew
 - [ ] ft_strdel
 - [ ] ft_strclr
-- [ ] ft_striter
-- [ ] ft_striteri
-- [ ] ft_strmap
-- [ ] ft_strmapi
+- [X] ft_striter
+- [X] ft_striteri
+- [X] ft_strmap
+- [X] ft_strmapi
 - [X] ft_strequ
 - [X] ft_strnequ
 - [X] ft_strsub
