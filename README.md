@@ -54,9 +54,9 @@ Useful command :
 
 - [ ] ft_memalloc
 - [ ] ft_memdel
-- [ ] ft_strnew
-- [ ] ft_strdel
-- [ ] ft_strclr
+- [X] ft_strnew
+- [X] ft_strdel
+- [X] ft_strclr
 - [X] ft_striter
 - [X] ft_striteri
 - [X] ft_strmap

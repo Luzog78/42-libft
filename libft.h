@@ -6,7 +6,7 @@
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/30 18:51:16 by luzog            ###   ########.fr       */
+/*   Updated: 2023/09/30 19:06:09 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,5 +52,8 @@ void			ft_striter(char *s, void (*f)(char *));
 void			ft_striteri(char *s, void (*f)(unsigned int, char *));
 char			*ft_strmap(char *s, char (*f)(char));
 char			*ft_strmapi(char *s, char (*f)(unsigned int, char));
+char			*ft_strnew(size_t size);
+void			ft_strdel(char **as);
+void			ft_strclr(char *s);
 
 #endif
