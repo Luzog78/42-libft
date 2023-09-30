@@ -6,12 +6,13 @@
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:48:07 by luzog            ###   ########.fr       */
+/*   Updated: 2023/09/30 17:40:29 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdlib.h>
 
 int				ft_atoi(char const *str);
 int				ft_isalnum(char const *str);
@@ -45,5 +46,6 @@ char			*ft_strjoin(char const *s1, char const *s2);
 int				ft_strnequ(char const *s1, char const *s2);
 char			**ft_strsplit(char const *str, char c);
 char			*ft_strtrim(char const *str);
+char			*ft_strsub(char const *s, unsigned int start, size_t len);
 
 #endif

@@ -63,7 +63,7 @@ Useful command :
 - [ ] ft_strmapi
 - [X] ft_strequ
 - [X] ft_strnequ
-- [ ] ft_strsub
+- [X] ft_strsub
 - [X] ft_strjoin
 - [X] ft_strtrim
 - [X] ft_strsplit *(not safe malloc)*
