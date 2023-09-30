@@ -6,7 +6,7 @@
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/30 17:40:29 by luzog            ###   ########.fr       */
+/*   Updated: 2023/09/30 18:22:19 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,5 +47,6 @@ int				ft_strnequ(char const *s1, char const *s2);
 char			**ft_strsplit(char const *str, char c);
 char			*ft_strtrim(char const *str);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
+char			*ft_itoa(int integer);
 
 #endif
