@@ -9,9 +9,9 @@ __Author__ : `ysabik`
 Version: `alpha1.0`
 
 Useful command :
-	```sh
-	make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
-	```
+```sh
+make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
+```
 
 <br>
 
@@ -19,13 +19,13 @@ Useful command :
 
 ### Libc Funcs
 
-- [ ] memset
-- [ ] bzero
-- [ ] memcpy
-- [ ] memccpy
-- [ ] memmove
-- [ ] memchr
-- [ ] memcmp
+- [X] memset *(not sure)* *(not tested)*
+- [X] bzero *(not sure)* *(not tested)*
+- [X] memcpy *(not sure : overlapping)* *(not tested)*
+- [X] memccpy *(not sure)* *(not tested)*
+- [X] memmove *(not sure)* *(not tested)*
+- [X] memchr *(not sure)* *(not tested)*
+- [X] memcmp *(not sure)* *(not tested)*
 - [X] strlen
 - [X] strdup
 - [X] strcpy
@@ -35,16 +35,16 @@ Useful command :
 - [X] strlcat
 - [ ] strchr
 - [ ] strrchr
-- [X] strstr
+- [X] strstr *(not tested)*
 - [ ] strnstr
 - [X] strcmp
 - [X] strncmp
-- [X] atoi
+- [X] atoi *(not sure)*
 - [X] isalpha
-- [X] isdigit
+- [X] isdigit *(not sure)*
 - [X] isalnum
-- [X] isascii
-- [X] isprint
+- [X] isascii *(not sure)*
+- [X] isprint *(not sure)*
 - [X] toupper
 - [X] tolower
 
@@ -54,20 +54,20 @@ Useful command :
 
 - [ ] ft_memalloc
 - [ ] ft_memdel
-- [X] ft_strnew
-- [X] ft_strdel
-- [X] ft_strclr
-- [X] ft_striter
-- [X] ft_striteri
-- [X] ft_strmap
-- [X] ft_strmapi
-- [X] ft_strequ
-- [X] ft_strnequ
-- [X] ft_strsub
-- [X] ft_strjoin
-- [X] ft_strtrim
-- [X] ft_strsplit *(not safe malloc)*
-- [X] ft_itoa
+- [X] ft_strnew *(not tested)*
+- [X] ft_strdel *(not tested)*
+- [X] ft_strclr *(not tested)*
+- [X] ft_striter *(not tested)*
+- [X] ft_striteri *(not tested)*
+- [X] ft_strmap *(not tested)*
+- [X] ft_strmapi *(not tested)*
+- [X] ft_strequ *(not tested)*
+- [X] ft_strnequ *(not tested)*
+- [X] ft_strsub *(not tested)*
+- [X] ft_strjoin *(not tested)*
+- [X] ft_strtrim *(not tested)*
+- [X] ft_strsplit *(not safe malloc)* *(not tested)*
+- [X] ft_itoa *(not tested)*
 - [X] ft_putchar
 - [X] ft_putstr
 - [X] ft_putendl
