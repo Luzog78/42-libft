@@ -33,10 +33,10 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 - [X] strcat
 - [X] strncat
 - [X] strlcat
-- [ ] strchr
-- [ ] strrchr
+- [X] strchr *(not sure)* *(not tested)*
+- [X] strrchr *(not sure)* *(not tested)*
 - [X] strstr *(not tested)*
-- [ ] strnstr
+- [X] strnstr *(not sure at all...)* *(not tested)*
 - [X] strcmp
 - [X] strncmp
 - [X] atoi *(not sure)*

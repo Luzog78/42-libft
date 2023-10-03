@@ -6,7 +6,7 @@
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/04 01:42:28 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/04 01:58:37 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,11 @@ void			ft_bzero(void *dest, size_t len);
 void			*ft_memcpy(void *dest, void const *src, size_t len);
 void			*ft_memccpy(void *dest, void const *src, int c, size_t len);
 void			*ft_memmove(void *dest, void const *src, size_t len);
-void			*ft_memchr(void const *str, int c, size_t len);
-int				ft_memcmp(void const *str1, void const *str2, size_t len);
+void			*ft_memchr(void const *src, int c, size_t len);
+int				ft_memcmp(void const *src1, void const *src2, size_t len);
+char			*ft_strchr(char const *str, int c);
+char			*ft_strrchr(char const *str, int c);
+char			*ft_strnstr(char const *str, char const *to_find, size_t len);
 int				ft_atoi(char const *str);
 int				ft_isalnum(char const *str);
 int				ft_isalpha(char const *str);
