@@ -83,12 +83,12 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 
 ### Chained List Handling
 
-- [ ] ft_lstnew
-- [ ] ft_lstdelone
-- [ ] ft_lstdel
-- [ ] ft_lstadd
-- [ ] ft_lstiter
-- [ ] ft_lstmap
+- [X] ft_lstnew *(not tested)*
+- [X] ft_lstdelone *(not tested)*
+- [X] ft_lstdel *(not tested)*
+- [X] ft_lstadd *(not tested)*
+- [X] ft_lstiter *(not tested)*
+- [X] ft_lstmap *(not sure at all...)* *(not tested)*
 
 <br>
 <br>
