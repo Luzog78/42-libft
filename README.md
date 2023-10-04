@@ -67,7 +67,7 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 - [X] ft_strjoin *(not tested)*
 - [X] ft_strtrim *(not tested)*
 - [X] ft_strsplit *(not safe malloc)* *(not tested)*
-- [X] ft_itoa *(not tested)*
+- [X] ft_itoa *(not sure)* *(not tested)*
 - [X] ft_putchar
 - [X] ft_putstr
 - [X] ft_putendl
