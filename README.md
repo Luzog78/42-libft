@@ -6,7 +6,7 @@
 
 __Author__ : `ysabik`
 
-Version: `alpha1.0`
+Version: `beta1.0`
 
 Useful command :
 ```sh
