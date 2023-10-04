@@ -6,7 +6,7 @@
 /*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/04 01:58:37 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/04 02:02:04 by luzog            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,8 @@ char			*ft_strstr(char *str, char const *to_find);
 char			*ft_tolower(char *str);
 char			*ft_toupper(char *str);
 
+void			*ft_memalloc(size_t size);
+void			ft_memdel(void **ap);
 void			ft_putchar_fd(char c, int fd);
 void			ft_putchar(char c);
 void			ft_putendl_fd(char const *str, int fd);

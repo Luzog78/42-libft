@@ -31,6 +31,9 @@ SRC_FILES	= \
 				ft_isprint.c \
 				ft_toupper.c \
 				ft_tolower.c \
+				ft_memalloc.c \
+				ft_memdel.c \
+				\
 				ft_itoa.c \
 				ft_putchar_fd.c \
 				ft_putchar.c \

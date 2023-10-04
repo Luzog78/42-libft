@@ -52,8 +52,8 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 
 ### Additional Funcs
 
-- [ ] ft_memalloc
-- [ ] ft_memdel
+- [X] ft_memalloc
+- [X] ft_memdel
 - [X] ft_strnew *(not tested)*
 - [X] ft_strdel *(not tested)*
 - [X] ft_strclr *(not tested)*
