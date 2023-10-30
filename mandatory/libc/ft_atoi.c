@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:43:18 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 17:57:05 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 20:01:15 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_atoi(char const *str)
 	while (ft_is_whitespace(*str))
 		str++;
 	negative_multiplier = 1;
-	while (*str == '+' || *str == '-')
+	if (*str == '+' || *str == '-')
 	{
 		if (*str == '-')
 			negative_multiplier *= -1;

@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:34:32 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 14:19:07 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 20:35:40 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,9 +26,9 @@ int	ft_strncmp(char const *s1, char const *s2, size_t n)
 	if (i < n)
 	{
 		if (s1[i])
-			return (s1[i]);
+			return (1);
 		if (s2[i])
-			return (-s2[i]);
+			return (-1);
 	}
 	return (0);
 }

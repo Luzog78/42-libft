@@ -1,4 +1,4 @@
-CC					= gcc
+CC					= clang
 FLAGS				= -Werror -Wall -Wextra
 NAME				= libft.a
 HEADER				= libft.h

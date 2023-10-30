@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:29:36 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:09:07 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 20:48:19 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ int	ft_strcmp(char const *s1, char const *s2)
 		i++;
 	}
 	if (s1[i])
-		return (s1[i]);
+		return (1);
 	if (s2[i])
-		return (-s2[i]);
+		return (-1);
 	return (0);
 }
