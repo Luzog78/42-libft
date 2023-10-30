@@ -53,10 +53,10 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 
 ### Additional Funcs
 
-- [X] ft_strsub *(not tested)*
+- [X] ft_substr *(not tested)*
 - [X] ft_strjoin *(not tested)*
 - [X] ft_strtrim *(not tested)*
-- [X] ft_strsplit *(not safe malloc)* *(not tested)*
+- [X] ft_split *(not safe malloc)* *(not tested)*
 - [X] ft_itoa *(not sure)* *(not tested)*
 - [X] ft_strmapi *(not tested)*
 - [X] ft_striteri *(not tested)*

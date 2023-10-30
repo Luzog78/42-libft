@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 17:46:15 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 18:32:07 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,10 +53,10 @@ char		*ft_strdup(char const *src);
 /* === ->>  Additional functions  <<- === */
 /* ************************************** */
 
-char		*ft_strsub(char const *s, unsigned int start, size_t len);
+char		*ft_substr(char const *s, unsigned int start, size_t len);
 char		*ft_strjoin(char const *s1, char const *s2);
 char		*ft_strtrim(char const *str);
-char		**ft_strsplit(char const *str, char c);
+char		**ft_split(char const *str, char c);
 char		*ft_itoa(int integer);
 char		*ft_strmapi(char *s, char (*f)(unsigned int, char));
 void		ft_striteri(char *s, void (*f)(unsigned int, char *));

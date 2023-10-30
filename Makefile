@@ -26,10 +26,10 @@ MANDATORY_SRC_FILES	= \
 	mandatory/libc/ft_atoi.c \
 	mandatory/libc/ft_calloc.c \
 	mandatory/libc/ft_strdup.c \
-	mandatory/additional/ft_strsub.c \
+	mandatory/additional/ft_substr.c \
 	mandatory/additional/ft_strjoin.c \
 	mandatory/additional/ft_strtrim.c \
-	mandatory/additional/ft_strsplit.c \
+	mandatory/additional/ft_split.c \
 	mandatory/additional/ft_itoa.c \
 	mandatory/additional/ft_strmapi.c \
 	mandatory/additional/ft_striteri.c \

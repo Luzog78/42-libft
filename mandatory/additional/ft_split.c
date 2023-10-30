@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:49 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 17:55:32 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 18:31:16 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static int	ft_split_len(char const *str, char c);
 static void	ft_split_fill(char const *str, char c, char **splitted);
 static void	ft_count(int *counter, int *str_j, char const *str, char c);
 
-char	**ft_strsplit(char const *str, char c)
+char	**ft_split(char const *str, char c)
 {
 	int		len;
 	char	**splitted;
