@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstdel.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/04 02:29:27 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 20:36:14 by ysabik           ###   ########.fr       */
+/*   Created: 2023/10/30 21:43:20 by ysabik            #+#    #+#             */
+/*   Updated: 2023/10/30 21:43:27 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_lstdel(t_list **alst, void (*del)(void *, size_t))
+t_list	*ft_lstlast(t_list *list)
 {
-	t_list	*nxt;
+	t_list	*tmp;
 
-	while (*alst)
-	{
-		nxt = (*alst)->next;
-		ft_lstdelone(alst, del);
-		*alst = nxt;
-	}
+	tmp = list;
+	if (!tmp)
+		return (NULL);
+	while (tmp->next)
+		tmp = tmp->next;
+	return (tmp);
 }

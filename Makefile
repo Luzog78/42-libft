@@ -39,9 +39,12 @@ MANDATORY_SRC_FILES	= \
 	mandatory/additional/ft_putnbr_fd.c
 BONUS_SRC_FILES		= \
 	bonus/list/ft_lstnew.c \
+	bonus/list/ft_lstadd_front.c \
+	bonus/list/ft_lstsize.c \
+	bonus/list/ft_lstlast.c \
+	bonus/list/ft_lstadd_back.c \
 	bonus/list/ft_lstdelone.c \
-	bonus/list/ft_lstdel.c \
-	bonus/list/ft_lstadd.c \
+	bonus/list/ft_lstclear.c \
 	bonus/list/ft_lstiter.c \
 	bonus/list/ft_lstmap.c \
 	bonus/libc/ft_memccpy.c \
