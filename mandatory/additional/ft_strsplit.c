@@ -3,19 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strsplit.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:49 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 14:13:40 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 17:55:32 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char	**ft_strsplit(char const *str, char c);
-int		ft_split_len(char const *str, char c);
-void	ft_split_fill(char const *str, char c, char **splitted);
-void	ft_count(int *counter, int *str_j, char const *str, char c);
+static int	ft_split_len(char const *str, char c);
+static void	ft_split_fill(char const *str, char c, char **splitted);
+static void	ft_count(int *counter, int *str_j, char const *str, char c);
 
 char	**ft_strsplit(char const *str, char c)
 {
@@ -31,7 +30,7 @@ char	**ft_strsplit(char const *str, char c)
 	return (splitted);
 }
 
-int	ft_split_len(char const *str, char c)
+static int	ft_split_len(char const *str, char c)
 {
 	int	i;
 	int	j;
@@ -60,7 +59,7 @@ int	ft_split_len(char const *str, char c)
 	return (tab_len);
 }
 
-void	ft_split_fill(char const *str, char c, char **splitted)
+static void	ft_split_fill(char const *str, char c, char **splitted)
 {
 	int	str_i;
 	int	str_j;
@@ -89,7 +88,7 @@ void	ft_split_fill(char const *str, char c, char **splitted)
 	}
 }
 
-void	ft_count(int *counter, int *str_j, char const *str, char c)
+static void	ft_count(int *counter, int *str_j, char const *str, char c)
 {
 	*counter = 0;
 	while (str[*str_j] && str[*str_j] != c)

@@ -44,7 +44,7 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 - [X] memcmp *(not sure)* *(not tested)*
 - [X] strnstr *(not sure at all...)* *(not tested)*
 - [X] atoi *(not sure)*
-- [ ] calloc
+- [X] calloc *(not sure)* *(not tested)*
 - [X] strdup
 
 ---

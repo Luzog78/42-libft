@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 17:13:36 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 17:46:15 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ typedef struct s_list
 	size_t			content_size;
 	struct s_list	*next;
 }	t_list;
-
 
 /* ******************************** */
 /* === ->>  Libc functions  <<- === */
@@ -50,8 +49,6 @@ int			ft_atoi(char const *str);
 // calloc
 char		*ft_strdup(char const *src);
 
-
-
 /* ************************************** */
 /* === ->>  Additional functions  <<- === */
 /* ************************************** */
@@ -67,8 +64,6 @@ void		ft_putchar_fd(char c, int fd);
 void		ft_putstr_fd(char const *str, int fd);
 void		ft_putendl_fd(char const *str, int fd);
 void		ft_putnbr_fd(int n, int fd);
-
-
 
 /* **************************** */
 /* === ->>  Bonus Part  <<- === */

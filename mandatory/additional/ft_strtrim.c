@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:44 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:51:36 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 17:56:38 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-char	*ft_strtrim(char const *s);
-int		is_space(char c);
+static int	is_space(char c);
 
 char	*ft_strtrim(char const *s)
 {
@@ -40,7 +38,7 @@ char	*ft_strtrim(char const *s)
 	return (new);
 }
 
-int	is_space(char c)
+static int	is_space(char c)
 {
 	if (c == ' ' || c == '\n' || c == '\t')
 		return (1);

@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:43:18 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:08:04 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 17:57:05 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char const *str);
-int	ft_is_whitespace(char c);
+static int	ft_is_whitespace(char c);
 
 int	ft_atoi(char const *str)
 {
@@ -36,7 +35,7 @@ int	ft_atoi(char const *str)
 	return (sum * negative_multiplier);
 }
 
-int	ft_is_whitespace(char c)
+static int	ft_is_whitespace(char c)
 {
 	return (c == ' ' || c == '\t' || c == '\n'
 		|| c == '\v' || c == '\f' || c == '\r');

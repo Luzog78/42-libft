@@ -3,18 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:44:01 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/30 18:35:04 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 17:53:51 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_itoa(int integer);
-void	fill(char *str, int idx, int integer);
-int		int_len(int i);
+static void	fill(char *str, int idx, int integer);
+static int	int_len(int i);
 
 char	*ft_itoa(int integer)
 {
@@ -45,7 +44,7 @@ char	*ft_itoa(int integer)
 	return (alpha);
 }
 
-void	fill(char *str, int idx, int integer)
+static void	fill(char *str, int idx, int integer)
 {
 	if (integer < 0)
 	{
@@ -58,7 +57,7 @@ void	fill(char *str, int idx, int integer)
 		fill(str, idx - 1, integer);
 }
 
-int	int_len(int i)
+static int	int_len(int i)
 {
 	int	len;
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 01:25:34 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/04 01:36:23 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 17:49:47 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	*ft_memccpy(void *dest, void const *src, int c, size_t len)
 	{
 		*dest_cpy++ = *src_cpy++;
 		if (*(src_cpy - 1) == (unsigned char) c)
-			return (dest_cpy);
+			return ((void *) dest_cpy);
 	}
 	return (NULL);
 }

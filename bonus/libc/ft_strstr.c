@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:36:27 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:13:41 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 17:51:12 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strstr(char *str, char const *to_find);
-int		ft_find_exact(char const *str, char const *to_find);
+static int	ft_find_exact(char const *str, char const *to_find);
 
 char	*ft_strstr(char *str, char const *to_find)
 {
@@ -26,7 +25,7 @@ char	*ft_strstr(char *str, char const *to_find)
 	return (0);
 }
 
-int	ft_find_exact(char const *str, char const *to_find)
+static int	ft_find_exact(char const *str, char const *to_find)
 {
 	int	i;
 
