@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:34:12 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:09:59 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 14:14:29 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strncat(char *dest, char const *src, unsigned int n)
+char	*ft_strncat(char *dest, char const *src, size_t n)
 {
-	unsigned int	dest_len;
-	unsigned int	i;
+	size_t	dest_len;
+	size_t	i;
 
 	dest_len = ft_strlen(dest);
 	i = 0;

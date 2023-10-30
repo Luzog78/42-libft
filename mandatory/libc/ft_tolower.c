@@ -1,26 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 14:41:11 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:08:17 by luzog            ###   ########.fr       */
+/*   Created: 2023/09/28 14:37:33 by luzog             #+#    #+#             */
+/*   Updated: 2023/10/30 14:21:35 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char const *str)
+int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i])
-	{
-		if ((str[i] < 'A' || str[i] > 'Z')
-			&& (str[i] < 'a' || str[i] > 'z'))
-			return (0);
-		i++;
-	}
-	return (1);
+	if ('A' <= c && c <= 'Z')
+		return (c + 32);
+	return (c);
 }

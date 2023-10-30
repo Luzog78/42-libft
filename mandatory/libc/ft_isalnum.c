@@ -1,29 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 14:35:11 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:10:14 by luzog            ###   ########.fr       */
+/*   Created: 2023/09/28 14:42:16 by luzog             #+#    #+#             */
+/*   Updated: 2023/10/30 13:43:01 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strncpy(char *dest, char const *src, unsigned int n)
+int	ft_isalnum(int c)
 {
-	unsigned int	i;
-
-	i = 0;
-	while (i < n && src[i] != '\0')
-	{
-		dest[i] = src[i];
-		i++;
-	}
-	while (i < n)
-	{
-		dest[i] = '\0';
-		i++;
-	}
-	return (dest);
+	if ((c < '0' || c > '9')
+		&& (c < 'A' || c > 'Z')
+		&& (c < 'a' || c > 'z'))
+		return (0);
+	return (1);
 }

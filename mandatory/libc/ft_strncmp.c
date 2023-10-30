@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/28 14:39:30 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:08:31 by luzog            ###   ########.fr       */
+/*   Created: 2023/09/28 14:34:32 by luzog             #+#    #+#             */
+/*   Updated: 2023/10/30 14:19:07 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(char const *str)
+#include "libft.h"
+
+int	ft_strncmp(char const *s1, char const *s2, size_t n)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	while (str[i])
+	while (s1[i] && s2[i] && i < n)
 	{
-		if (str[i] < ' ' || str[i] > '~')
-			return (0);
+		if (s1[i] != s2[i])
+			return (s1[i] - s2[i]);
 		i++;
 	}
-	return (1);
+	if (i < n)
+	{
+		if (s1[i])
+			return (s1[i]);
+		if (s2[i])
+			return (-s2[i]);
+	}
+	return (0);
 }

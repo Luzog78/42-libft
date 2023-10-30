@@ -3,20 +3,20 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:31:53 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:09:46 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/30 14:17:19 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_strlcat(char *dest, char const *src, unsigned int size)
+size_t	ft_strlcat(char *dest, char const *src, size_t size)
 {
-	unsigned int	full_size;
-	unsigned int	counter;
-	unsigned int	i;
+	size_t	full_size;
+	size_t	counter;
+	size_t	i;
 
 	i = 0;
 	while (dest[i] && i < size)
