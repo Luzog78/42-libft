@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 15:41:18 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 17:13:36 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void		*ft_memset(void *dest, int c, size_t len);
 void		ft_bzero(void *dest, size_t len);
 void		*ft_memcpy(void *dest, void const *src, size_t len);
 void		*ft_memmove(void *dest, void const *src, size_t len);
-// strlcpy
+size_t		ft_strlcpy(char *dest, char const *src, size_t size);
 size_t		ft_strlcat(char *dest, char const *src, size_t size);
 int			ft_toupper(int c);
 int			ft_tolower(int c);

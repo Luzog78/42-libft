@@ -33,7 +33,7 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 - [X] bzero *(not sure)* *(not tested)*
 - [X] memcpy *(not sure : overlapping)* *(not tested)*
 - [X] memmove *(not sure)* *(not tested)*
-- [ ] strlcpy
+- [X] strlcpy
 - [X] strlcat
 - [X] toupper
 - [X] tolower
