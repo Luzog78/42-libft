@@ -6,11 +6,11 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:49 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:31:16 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 18:42:06 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
+#include "libft.h"
 
 static int	ft_split_len(char const *str, char c);
 static void	ft_split_fill(char const *str, char c, char **splitted);
