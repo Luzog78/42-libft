@@ -6,16 +6,16 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:44 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:43:27 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/30 18:54:48 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_space(char c);
+static int	is_trimable(char c, char const *set);
 static char	*ft_strncopy(char *dest, char const *src, size_t n);
 
-char	*ft_strtrim(char const *s)
+char	*ft_strtrim(char const *s, char const *set)
 {
 	char	*new;
 	int		i;
@@ -23,11 +23,11 @@ char	*ft_strtrim(char const *s)
 
 	i = 0;
 	j = -1;
-	while (is_space(*s))
+	while (is_trimable(*s, set))
 		s++;
 	while (s[i])
 	{
-		if (!is_space(s[i]))
+		if (!is_trimable(s[i], set))
 			j = i;
 		i++;
 	}
@@ -39,10 +39,14 @@ char	*ft_strtrim(char const *s)
 	return (new);
 }
 
-static int	is_space(char c)
+static int	is_trimable(char c, char const *set)
 {
-	if (c == ' ' || c == '\n' || c == '\t')
-		return (1);
+	while (*set)
+	{
+		if (c == *set)
+			return (1);
+		set++;
+	}
 	return (0);
 }
 
