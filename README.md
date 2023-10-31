@@ -6,7 +6,7 @@
 
 __Author__ : `ysabik`
 
-Version: `beta1.0`
+Version: `release1.0`
 
 Testing command :
 ```sh
@@ -24,27 +24,27 @@ bash test/grademe.sh
 ### Libc Funcs
 
 - [X] isalpha
-- [X] isdigit *(not sure)*
+- [X] isdigit
 - [X] isalnum
-- [X] isascii *(not sure)*
-- [X] isprint *(not sure)*
+- [X] isascii
+- [X] isprint
 - [X] strlen
-- [X] memset *(not sure)* *(not tested)*
-- [X] bzero *(not sure)* *(not tested)*
-- [X] memcpy *(not sure : overlapping)* *(not tested)*
-- [X] memmove *(not sure)* *(not tested)*
+- [X] memset
+- [X] bzero
+- [X] memcpy
+- [X] memmove
 - [X] strlcpy
 - [X] strlcat
 - [X] toupper
 - [X] tolower
-- [X] strchr *(not sure)* *(not tested)*
-- [X] strrchr *(not sure)* *(not tested)*
+- [X] strchr
+- [X] strrchr
 - [X] strncmp
-- [X] memchr *(not sure)* *(not tested)*
-- [X] memcmp *(not sure)* *(not tested)*
-- [X] strnstr *(not sure at all...)* *(not tested)*
-- [X] atoi *(not sure)*
-- [X] calloc *(not sure)* *(not tested)*
+- [X] memchr
+- [X] memcmp
+- [X] strnstr
+- [X] atoi
+- [X] calloc
 - [X] strdup
 
 ---
@@ -53,13 +53,13 @@ bash test/grademe.sh
 
 ### Additional Funcs
 
-- [X] ft_substr *(not tested)*
-- [X] ft_strjoin *(not tested)*
-- [X] ft_strtrim *(not tested)*
-- [X] ft_split *(not safe malloc)* *(not tested)*
-- [X] ft_itoa *(not sure)* *(not tested)*
-- [X] ft_strmapi *(not tested)*
-- [X] ft_striteri *(not tested)*
+- [X] ft_substr
+- [X] ft_strjoin
+- [X] ft_strtrim
+- [X] ft_split
+- [X] ft_itoa
+- [X] ft_strmapi
+- [X] ft_striteri
 - [X] ft_putchar_fd
 - [X] ft_putstr_fd
 - [X] ft_putendl_fd
@@ -91,12 +91,12 @@ bash test/grademe.sh
 
 ### Extra Libc
 
-- [X] memccpy *(not sure)* *(not tested)*
+- [X] memccpy
 - [X] strcpy
 - [X] strncpy
 - [X] strcat
 - [X] strncat
-- [X] strstr *(not tested)*
+- [X] strstr
 - [X] strcmp
 
 ---
@@ -107,13 +107,13 @@ bash test/grademe.sh
 
 - [X] ft_memalloc
 - [X] ft_memdel
-- [X] ft_strnew *(not tested)*
-- [X] ft_strdel *(not tested)*
-- [X] ft_strclr *(not tested)*
-- [X] ft_striter *(not tested)*
-- [X] ft_strmap *(not tested)*
-- [X] ft_strequ *(not tested)*
-- [X] ft_strnequ *(not tested)*
+- [X] ft_strnew
+- [X] ft_strdel
+- [X] ft_strclr
+- [X] ft_striter
+- [X] ft_strmap
+- [X] ft_strequ
+- [X] ft_strnequ
 - [X] ft_putchar
 - [X] ft_putstr
 - [X] ft_putendl
