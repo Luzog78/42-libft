@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:53 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:41:47 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/31 13:13:00 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,9 +35,12 @@ static char	*ft_strcopy(char *dest, char const *src)
 {
 	int	i;
 
-	i = -1;
-	while (src[++i])
+	i = 0;
+	while (src[i])
+	{
 		dest[i] = src[i];
+		i++;
+	}
 	dest[i] = '\0';
 	return (dest);
 }

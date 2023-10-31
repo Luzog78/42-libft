@@ -8,9 +8,9 @@ __Author__ : `ysabik`
 
 Version: `beta1.0`
 
-Useful command :
+Testing command :
 ```sh
-make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
+bash test/grademe.sh
 ```
 
 ---
@@ -75,12 +75,15 @@ make && gcc main.c libft.a -Werror -Wextra -Wall && ./a.out | cat -e && rm a.out
 
 ### Chained Lists
 
-- [X] ft_lstnew *(not tested)*
-- [X] ft_lstdelone *(not tested)*
-- [X] ft_lstdel *(not tested)*
-- [X] ft_lstadd *(not tested)*
-- [X] ft_lstiter *(not tested)*
-- [X] ft_lstmap *(not sure at all...)* *(not tested)*
+- [X] ft_lstnew
+- [X] ft_lstadd_front
+- [X] ft_lstsize
+- [X] ft_lstlast
+- [X] ft_lstadd_back
+- [X] ft_lstdelone
+- [X] ft_lstclear
+- [X] ft_lstiter
+- [X] ft_lstmap
 
 ---
 

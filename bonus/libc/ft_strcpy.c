@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:30:32 by luzog             #+#    #+#             */
-/*   Updated: 2023/09/28 15:09:15 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/31 12:58:43 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,12 @@ char	*ft_strcpy(char *dest, char const *src)
 {
 	int	i;
 
-	i = -1;
-	while (src[++i])
+	i = 0;
+	while (src[i])
+	{
 		dest[i] = src[i];
+		i++;
+	}
 	dest[i] = '\0';
 	return (dest);
 }

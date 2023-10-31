@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memalloc.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: luzog <luzog@student.42.fr>                +#+  +:+       +#+        */
+/*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 02:00:13 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/04 02:00:28 by luzog            ###   ########.fr       */
+/*   Updated: 2023/10/31 13:08:42 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,11 @@ void	*ft_memalloc(size_t size)
 	if (mem == NULL)
 		return (NULL);
 	mem_cpy = (char *) mem;
-	while (size--)
-		*mem_cpy++ = 0;
+	while (size)
+	{
+		*mem_cpy = 0;
+		mem_cpy++;
+		size--;
+	}
 	return (mem);
 }

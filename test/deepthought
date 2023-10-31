@@ -1,9 +1,9 @@
 = Host-specific information ====================================================
 $> hostname; uname -msr
-2E5.42angouleme.fr
+2B3.42angouleme.fr
 Linux 5.15.0-87-generic x86_64
 $> date
-Mon Oct 30 09:48:52 PM CET 2023
+Tue Oct 31 01:43:07 PM CET 2023
 $> gcc --version
 gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
 Copyright (C) 2021 Free Software Foundation, Inc.
@@ -90,7 +90,7 @@ clang -Werror -Wall -Wextra -c bonus/misc/ft_putnbr.c -o bonus/misc/ft_putnbr.o 
 ar rcs libft.a bonus/list/ft_lstnew.o bonus/list/ft_lstadd_front.o bonus/list/ft_lstsize.o bonus/list/ft_lstlast.o bonus/list/ft_lstadd_back.o bonus/list/ft_lstdelone.o bonus/list/ft_lstclear.o bonus/list/ft_lstiter.o bonus/list/ft_lstmap.o bonus/libc/ft_memccpy.o bonus/libc/ft_strcpy.o bonus/libc/ft_strncpy.o bonus/libc/ft_strcat.o bonus/libc/ft_strncat.o bonus/libc/ft_strstr.o bonus/libc/ft_strcmp.o bonus/misc/ft_memalloc.o bonus/misc/ft_memdel.o bonus/misc/ft_strnew.o bonus/misc/ft_strdel.o bonus/misc/ft_strclr.o bonus/misc/ft_striter.o bonus/misc/ft_strmap.o bonus/misc/ft_strequ.o bonus/misc/ft_strnequ.o bonus/misc/ft_putchar.o bonus/misc/ft_putstr.o bonus/misc/ft_putendl.o bonus/misc/ft_putnbr.o mandatory/libc/ft_isalpha.o mandatory/libc/ft_isdigit.o mandatory/libc/ft_isalnum.o mandatory/libc/ft_isascii.o mandatory/libc/ft_isprint.o mandatory/libc/ft_strlen.o mandatory/libc/ft_memset.o mandatory/libc/ft_bzero.o mandatory/libc/ft_memcpy.o mandatory/libc/ft_memmove.o mandatory/libc/ft_strlcpy.o mandatory/libc/ft_strlcat.o mandatory/libc/ft_toupper.o mandatory/libc/ft_tolower.o mandatory/libc/ft_strchr.o mandatory/libc/ft_strrchr.o mandatory/libc/ft_strncmp.o mandatory/libc/ft_memchr.o mandatory/libc/ft_memcmp.o mandatory/libc/ft_strnstr.o mandatory/libc/ft_atoi.o mandatory/libc/ft_calloc.o mandatory/libc/ft_strdup.o mandatory/additional/ft_substr.o mandatory/additional/ft_strjoin.o mandatory/additional/ft_strtrim.o mandatory/additional/ft_split.o mandatory/additional/ft_itoa.o mandatory/additional/ft_strmapi.o mandatory/additional/ft_striteri.o mandatory/additional/ft_putchar_fd.o mandatory/additional/ft_putstr_fd.o mandatory/additional/ft_putendl_fd.o mandatory/additional/ft_putnbr_fd.o
 
 $> ls -la libft.a
--rw-r--r-- 1 ysabik 2023_angouleme 81182 Oct 30 21:48 /nfs/homes/ysabik/42-Cursus-Workspace/42-libft/test/tmp_tests_dir/libft.a
+-rw-r--r-- 1 ysabik 2023_angouleme 81214 Oct 31 13:43 /nfs/homes/ysabik/42-Cursus-Workspace/42-libft/test/tmp_tests_dir/libft.a
 
 = Part1_functions ==============================================================
 

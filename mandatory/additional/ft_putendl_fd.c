@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:59 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:52:08 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/31 13:11:59 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,11 @@
 
 void	ft_putendl_fd(char *str, int fd)
 {
-	while (*str)
-		write(fd, str++, 1);
+	int	i;
+
+	i = 0;
+	while (str[i])
+		i++;
+	write(fd, str, i);
 	write(fd, "\n", 1);
 }
