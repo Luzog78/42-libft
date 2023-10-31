@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 01:54:38 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:18:46 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/31 17:17:29 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ char	*ft_strnstr(char const *str, char const *to_find, size_t len)
 	size_t	i;
 	size_t	j;
 
+	if (str == NULL && len == 0)
+		return (NULL);
 	if (!*to_find)
 		return ((char *) str);
 	i = 0;

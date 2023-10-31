@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:34:32 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 20:35:40 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/31 17:00:57 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_strncmp(char const *s1, char const *s2, size_t n)
 	while (s1[i] && s2[i] && i < n)
 	{
 		if (s1[i] != s2[i])
-			return (s1[i] - s2[i]);
+			return (*(unsigned char *)(s1 + i) - *(unsigned char *)(s2 + i));
 		i++;
 	}
 	if (i < n)

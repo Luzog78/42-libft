@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/04 01:29:52 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/31 13:21:20 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/31 16:42:20 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,26 @@
 
 void	*ft_memmove(void *dest, void const *src, size_t len)
 {
-	unsigned char	*mem;
+	size_t	i;
 
-	mem = (unsigned char *) dest;
+	if (dest == NULL && src == NULL)
+		return (NULL);
 	if (dest <= src)
 	{
-		while (len--)
+		i = 0;
+		while (i < len)
 		{
-			*mem = *(unsigned char *) src;
-			mem++;
-			src++;
+			((unsigned char *) dest)[i] = ((unsigned char *) src)[i];
+			i++;
 		}
 	}
 	else
 	{
-		mem += len;
-		src += len;
-		while (len--)
+		i = len;
+		while (i > 0)
 		{
-			mem--;
-			src--;
-			*mem = *(unsigned char *) src;
+			i--;
+			((unsigned char *) dest)[i] = ((unsigned char *) src)[i];
 		}
 	}
 	return (dest);

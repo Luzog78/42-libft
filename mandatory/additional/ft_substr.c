@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:43:47 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:31:50 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/10/31 17:45:34 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*sub;
 
 	s_len = ft_strlen(s);
-	if (start + len > s_len)
+	if (start >= s_len)
+		len = 0;
+	else if (start + len > s_len)
 		len = s_len - start;
 	sub = malloc(sizeof(char) * (len + 1));
 	if (sub == NULL)
