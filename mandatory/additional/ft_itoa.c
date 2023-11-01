@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:44:01 by luzog             #+#    #+#             */
-/*   Updated: 2023/11/01 14:14:08 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/01 16:56:13 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_itoa(int integer)
 	char	*alpha;
 
 	len = int_len(integer);
-	alpha = malloc(sizeof(char) * (len + 1));
+	alpha = ft_calloc(len + 1, sizeof(char));
 	if (alpha == NULL)
 		return (NULL);
 	if (integer == -2147483648)

@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/30 17:47:01 by ysabik            #+#    #+#             */
-/*   Updated: 2023/10/30 17:48:20 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/01 16:59:37 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,18 @@
 void	*ft_calloc(size_t nitems, size_t size)
 {
 	void	*mem;
+	t_ull	sz;
 
-	mem = malloc(nitems * size);
+	if (nitems == 0 || size == 0)
+		return (malloc(1));
+	if ((long long) nitems < 0 || (long long) size < 0)
+		return (NULL);
+	sz = nitems * size;
+	if (sz > SIZE_MAX)
+		return (NULL);
+	mem = malloc(sz);
 	if (mem == NULL)
 		return (NULL);
-	ft_memset(mem, 0, nitems * size);
+	ft_memset(mem, 0, (size_t) sz);
 	return (mem);
 }
