@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 14:31:53 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/31 17:14:49 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/01 14:22:54 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcat(char *dest, char const *src, size_t size)
 	size_t	counter;
 	size_t	i;
 
-	if (size == 0)
+	if (size == 0 && dest == NULL)
 		return (0);
 	i = 0;
 	while (dest[i] && i < size)

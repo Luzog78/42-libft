@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/30 18:40:21 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 18:50:18 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/01 13:35:43 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		new[i] = f(i, s[i]);
 		i++;
 	}
+	new[i] = '\0';
 	return (new);
 }

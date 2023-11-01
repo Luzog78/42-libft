@@ -6,7 +6,7 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 13:44:01 by luzog             #+#    #+#             */
-/*   Updated: 2023/10/30 17:53:51 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/01 14:14:08 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,10 @@ char	*ft_itoa(int integer)
 		return (alpha);
 	}
 	if (integer == 0)
-	{
 		alpha[0] = '0';
-		return (alpha);
-	}
-	fill(alpha, len - 1, integer);
+	else
+		fill(alpha, len - 1, integer);
+	alpha[len] = '\0';
 	return (alpha);
 }
 
