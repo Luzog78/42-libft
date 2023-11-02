@@ -6,15 +6,14 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/11/01 14:47:48 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/01 17:28:57 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
-# include <stdint.h>
-# define UNSIGNED_LONG_MAX 18446744073709551615UL
+# define MAX_UNSIGNED_LONG 18446744073709551615UL
 
 typedef unsigned long long	t_ull;
 typedef struct s_list
