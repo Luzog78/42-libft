@@ -6,12 +6,12 @@
 /*   By: ysabik <ysabik@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/28 02:18:56 by luzog             #+#    #+#             */
-/*   Updated: 2023/11/01 17:28:57 by ysabik           ###   ########.fr       */
+/*   Updated: 2023/11/02 07:24:41 by ysabik           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBFT_H
+# define LIBFT_H "release-1.0"
 # include <stdlib.h>
 # define MAX_UNSIGNED_LONG 18446744073709551615UL
 

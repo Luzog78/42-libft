@@ -1,5 +1,5 @@
 CC					= clang
-FLAGS				= -Werror -Wall -Wextra
+CFLAGS				= -Werror -Wall -Wextra
 NAME				= libft.a
 HEADER				= libft.h
 MANDATORY_SRC_FILES	= \
@@ -79,7 +79,7 @@ $(NAME) : $(MANDATORY_OBJ_FILES)
 	ar rcs $(NAME) $(MANDATORY_OBJ_FILES)
 
 .c.o :
-	$(CC) $(FLAGS) -c $< -o $@ -I.
+	$(CC) $(CFLAGS) -c $< -o $@ -I.
 
 clean :
 	rm -rf $(MANDATORY_OBJ_FILES) $(BONUS_OBJ_FILES)
@@ -88,3 +88,5 @@ fclean : clean
 	rm -rf $(NAME)
 
 re : fclean all
+
+.PHONY : all bonus clean fclean re
